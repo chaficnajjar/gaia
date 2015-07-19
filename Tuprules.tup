@@ -6,5 +6,5 @@ INCLUDE         = -Iinclude/
 
 LIBS            = -Llib -Wl,--no-as-needed -llua -ldl -lSDL2 -lGL -lGLEW -lpthread
 
-CXXFLAGS        = -Wall -std=c++11 -Wcomment $(DEBUG)
+CXXFLAGS        = -Wall -std=c++11 $(DEBUG)
 CPPFLAGS        = $(INCLUDE) -I.

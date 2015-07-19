@@ -1,4 +1,4 @@
 include_rules
 
-: foreach src/*.cc |> g++ $(CXXFLAGS) $(CPPFLAGS) -c %f -o %o |> src/%B.o
+: foreach src/*.cc include/imgui/imgui.cpp |> g++ $(CXXFLAGS) $(CPPFLAGS) -c %f -o %o |> src/%B.o
 : src/*.o |> g++ %f -o %o $(LIBS) |> $(BINARY)
