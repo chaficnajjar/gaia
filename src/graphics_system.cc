@@ -134,8 +134,8 @@ void GraphicsSystem::load(ShaderProgram& shader_program, Mesh& mesh) {
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *mesh.get_element_buffer());
     glBufferData(
             GL_ELEMENT_ARRAY_BUFFER,
-            mesh.get_n_elements()*sizeof(GLuint),
-            mesh.get_elements(),
+            mesh.get_n_indices()*sizeof(GLuint),
+            mesh.get_indices(),
             GL_STATIC_DRAW);
 
     glBindVertexArray(0);
@@ -187,7 +187,7 @@ void GraphicsSystem::render(ShaderProgram& shader_program, Mesh& mesh) {
             1,
             glm::value_ptr(adjusted_lighting_direction));
 
-    glDrawElements(GL_TRIANGLES, mesh.get_n_elements(), GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, mesh.get_n_indices(), GL_UNSIGNED_INT, 0);
 
     glBindVertexArray(0);
     //  glUseProgram(0);  // For some reason, this won't let me move the camera.
