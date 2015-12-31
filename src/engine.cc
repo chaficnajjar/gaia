@@ -7,7 +7,7 @@ Engine::Engine() :
     graphics_system_(config.get_width(), config.get_height()),
     input_system_(config.get_width(), config.get_height()),
     mesh_(1),
-    shader_program_("src/shader.vert", "src/shader.frag"),
+    shader_program_("src/shaders/shader.vert", "src/shaders/shader.frag"),
     camera_(shader_program_, config.get_width(), config.get_height()) {
     graphics_system_.load(shader_program_, mesh_);
 }

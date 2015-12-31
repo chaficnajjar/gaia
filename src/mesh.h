@@ -36,7 +36,7 @@ class Mesh {
     static const int N_TRIANGLE_VERTICES = 3;
     static const int N_FACES_SHARING_ONE_EDGE = 2;
 
-    static const int RECURSION_LEVEL = 4;
+    static const int RECURSION_LEVEL = 5;
     static const int N_FACES_IN_SUBDIVIDED_TRIANGLE = 4;
     static const int N_SUBDIVIDED_TRIANGLE_VERTICES = 12;
 

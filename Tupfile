@@ -1,4 +1,8 @@
 include_rules
 
+# Generate vertex shader file.
+: $(SHADERS_PATH)/shaderMain.vert |> cpp -P -DSHADER=\"noise3D.glsl\" -DVERSION='#version 130' %f %o |> $(SHADERS_PATH)/shader.vert
+
+# Link and compile Gaia.
 : foreach src/*.cc include/imgui/imgui.cpp |> g++ $(CXXFLAGS) $(CPPFLAGS) -c %f -o %o |> src/%B.o
 : src/*.o |> g++ %f -o %o $(LIBS) |> $(BINARY)

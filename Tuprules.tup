@@ -8,3 +8,5 @@ LIBS            = -Llib -Wl,--no-as-needed -llua -ldl -lSDL2 -lGL -lGLEW -lpthre
 
 CXXFLAGS        = -Wall -std=c++11 $(DEBUG)
 CPPFLAGS        = $(INCLUDE) -I.
+
+SHADERS_PATH    = src/shaders
