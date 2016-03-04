@@ -2,3 +2,4 @@ todo
 .tup
 gaia
 src/*.o
+src/shaders/shader.vert
