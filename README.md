@@ -2,6 +2,8 @@
 
 Final year project: procedurally generated planet.
 
+![Gaia Screenshot](https://cloud.githubusercontent.com/assets/1498164/13524118/02f306f6-e202-11e5-9001-5b578b7edc7c.png)
+
 ## Dependencies
 
 + [Tup](http://gittup.org/tup/)

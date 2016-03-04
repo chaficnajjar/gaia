@@ -178,7 +178,7 @@ void GraphicsSystem::render(ShaderProgram& shader_program, Mesh& mesh) {
 
     glUniform3f(
             glGetUniformLocation(shader_program.get_program(), "directional_color"),
-            0.6f, 0.6f, 0.6f);
+            0.8f, 0.8f, 0.8f);
 
     // Set lighting direction.
     glm::vec3 adjusted_lighting_direction = glm::vec3(1, 1, 1);
